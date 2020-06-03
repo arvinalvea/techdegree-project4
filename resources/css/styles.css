@@ -5,7 +5,7 @@
 
 * {
   font-family: 'Lato', sans-serif;
-  color: #777;
+  color: $grey;
   box-sizing: border-box;
 }
 
@@ -23,13 +23,13 @@ a {
 /* ============================================= */
 
 .headline-primary {
-  color: #58e1c1;
+  color: $teal;
   margin-left: 10px;
 }
 
 .headline-secondary {
   font-weight: 300;
-  color: #777;
+  color: $grey;
 }
 
 .link {
@@ -43,7 +43,7 @@ a {
   font-style: italic;
   margin-left: 20px;
   padding-left: 20px;
-  border-left: 8px solid #58e1c1;
+  border-left: 8px solid $teal;
   border-radius: 5px;
 }
 
@@ -146,8 +146,8 @@ a {
 }
 
 .nav-link:hover {
-  color: #fff;
-  background-color: #58e1c1;
+  color: $white;
+  background-color: $teal;
 }
 
 
@@ -158,7 +158,7 @@ a {
 .btn {
   margin-top: 15px;
   width: 100%;
-  color: #fff;
+  color: $white;
   border: none;
   padding: 10px 0;
   text-transform: uppercase;
@@ -200,7 +200,7 @@ a {
   margin: 10px auto 0;
   border: none;
   padding: 10px;
-  border-bottom: 5px solid #58e1c1;
+  border-bottom: 5px solid $teal;
 }
 
 .hidden {
