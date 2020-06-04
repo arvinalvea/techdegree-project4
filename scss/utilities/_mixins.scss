@@ -1,0 +1,36 @@
+// Media queries
+
+@mixin mq($break) {
+    @if $break == $brk-wide {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+}
+
+// Center container
+
+@mixin center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;    
+}
+
+// Create a flex container
+  
+@mixin flexy(
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+}
+
+// Lighten background-color
+
+@mixin lighter($color) {
+    background-color: lighten($color, 15%);
+}

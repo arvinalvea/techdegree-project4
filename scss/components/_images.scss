@@ -2,28 +2,35 @@
 /*              Images                           */
 /* ============================================= */
 
+.img-avatar,
+.img-frame,
+.img-logo {
+  @include center;
+}
+
+%logo {
+  @include mq($brk-wide) {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+.img-logo {
+  @extend %logo;
+}
+
 .img-avatar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 10px;
     max-width: 100%; 
     max-height: 100%;
   }
   
   .img-frame {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 10px;
     max-width: 100%;
     padding: 13px;
     border: 1px solid #ccc;
   }
   
-  .img-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
   

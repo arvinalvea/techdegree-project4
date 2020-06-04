@@ -449,29 +449,65 @@ a {
   border-radius: 5px;
 }
 
-/* line 15, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+@media (min-width: 768px) {
+  /* line 5, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+  .btn {
+    padding: 10px 30px;
+  }
+  /* line 15, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+  .btn + .btn {
+    margin-left: 10px;
+  }
+}
+
+/* line 21, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
 .default {
   background-color: #51ddfc;
 }
 
-/* line 19, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+/* line 23, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+.default:hover {
+  background-color: #9cecfd;
+}
+
+/* line 28, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
 .error {
   background-color: #e4757a;
 }
 
-/* line 23, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+/* line 30, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+.error:hover {
+  background-color: #f1b5b8;
+}
+
+/* line 35, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
 .info {
   background-color: #927bc1;
 }
 
-/* line 27, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+/* line 37, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+.info:hover {
+  background-color: #bdafd9;
+}
+
+/* line 42, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
 .success {
   background-color: #63cc82;
 }
 
-/* line 31, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+/* line 44, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+.success:hover {
+  background-color: #9ddfb0;
+}
+
+/* line 49, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
 .warning {
   background-color: #fd7856;
+}
+
+/* line 51, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+.warning:hover {
+  background-color: #feb4a2;
 }
 
 /* ============================================= */
@@ -508,12 +544,21 @@ a {
 /* line 5, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_navigation.scss */
 .nav {
   padding-left: 0;
-  flex-basis: 100%;
   display: flex;
   flex-direction: column;
+  flex-basis: 100%;
 }
 
-/* line 12, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_navigation.scss */
+@media (min-width: 768px) {
+  /* line 5, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_navigation.scss */
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+/* line 14, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_navigation.scss */
 .nav-link {
   text-align: center;
   border-radius: 5px;
@@ -523,7 +568,14 @@ a {
   transition: background-color .2s ease-in-out,  color .2s ease-in-out;
 }
 
-/* line 23, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_navigation.scss */
+@media (min-width: 768px) {
+  /* line 14, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_navigation.scss */
+  .nav-link {
+    flex-basis: 100px;
+  }
+}
+
+/* line 26, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_navigation.scss */
 .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
@@ -533,31 +585,35 @@ a {
 /*              Images                           */
 /* ============================================= */
 /* line 5, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_images.scss */
-.img-avatar {
+.img-avatar,
+.img-frame,
+.img-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  /* line 11, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_images.scss */
+  .img-logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+/* line 22, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_images.scss */
+.img-avatar {
   margin-top: 10px;
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 14, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_images.scss */
+/* line 28, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_images.scss */
 .img-frame {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 10px;
   max-width: 100%;
   padding: 13px;
   border: 1px solid #ccc;
-}
-
-/* line 24, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_images.scss */
-.img-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* ============================================= */
@@ -568,14 +624,41 @@ a {
   padding: 0 10px;
 }
 
-/* line 9, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 5, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+  .container {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 13, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+  }
+}
+
+/* line 20, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
 .row {
   display: flex;
   flex-direction: column;
   padding: 1em 10px;
 }
 
-/* line 15, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 20, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+  .row {
+    flex-direction: row;
+  }
+}
+
+/* line 28, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
 [class^=col] {
   margin-top: 10px;
   flex-basis: 100%;
@@ -584,173 +667,133 @@ a {
   border-radius: 5px;
 }
 
-/* line 23, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
-.theme.col-1 {
-  background-color: #927bc1;
-}
-
-/* line 27, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
-.theme.col-2 {
-  background-color: #fd7856;
-}
-
-/* line 31, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
-.theme.col-3 {
-  background-color: #deb2ee;
-}
-
-/* line 35, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
-.theme.col-4 {
-  background-color: #7ee6fd;
-}
-
-/* line 39, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
-.theme.col-5 {
-  background-color: #88d9a0;
-}
-
-/* line 43, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
-.theme.col-6 {
-  background-color: #4da2bb;
-}
-
-/* line 47, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
-.theme.col-7 {
-  background-color: #ec9fa3;
-}
-
-/* line 51, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
-.theme.col-8 {
-  background-color: #fd9f85;
-}
-
-/* line 55, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
-.theme.col-9 {
-  background-color: #e4757a;
-}
-
-/* line 59, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
-.theme.col-10 {
-  background-color: #63cc82;
-}
-
-/* line 63, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
-.theme.col-11 {
-  background-color: #51ddfc;
-}
-
-/* line 67, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
-.theme.col-12 {
-  background-color: #80e8d1;
-}
-
-/* line 71, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
-.card {
-  flex-basis: 100%;
-}
-
-/* ============================================= */
-/*              Media Queries                    */
-/* ============================================= */
 @media (min-width: 768px) {
-  /* line 6, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 13, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 19, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
-  .row {
-    flex-direction: row;
-  }
-  /* line 23, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
+  /* line 28, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
   [class^=col] {
     display: flex;
     justify-content: center;
     margin-top: 0;
     align-items: center;
   }
-  /* line 30, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
+  /* line 38, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
   [class^=col] + [class^=col] {
     margin-left: 10px;
   }
-  /* line 34, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+.theme.col-1 {
+  background-color: #927bc1;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+.theme.col-2 {
+  background-color: #fd7856;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+.theme.col-3 {
+  background-color: #deb2ee;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+.theme.col-4 {
+  background-color: #7ee6fd;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+.theme.col-5 {
+  background-color: #88d9a0;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+.theme.col-6 {
+  background-color: #4da2bb;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+.theme.col-7 {
+  background-color: #ec9fa3;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+.theme.col-8 {
+  background-color: #fd9f85;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+.theme.col-9 {
+  background-color: #e4757a;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+.theme.col-10 {
+  background-color: #63cc82;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+.theme.col-11 {
+  background-color: #51ddfc;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+.theme.col-12 {
+  background-color: #80e8d1;
+}
+
+/* line 50, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
+.card {
+  flex-basis: 100%;
+}
+
+@media (min-width: 768px) {
+  /* line 55, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
   .col-1 {
     flex-basis: 8.33%;
   }
-  /* line 38, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
+  /* line 59, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
   .col-2 {
     flex-basis: 16.67%;
   }
-  /* line 42, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
+  /* line 63, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
   .col-3 {
     flex-basis: 25.00%;
   }
-  /* line 46, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
+  /* line 67, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
   .col-4 {
     flex-basis: 33.33%;
   }
-  /* line 50, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
+  /* line 71, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
   .col-5 {
     flex-basis: 41.67%;
   }
-  /* line 54, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
+  /* line 75, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
   .col-6 {
     flex-basis: 50.00%;
   }
-  /* line 58, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
+  /* line 79, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
   .col-7 {
     flex-basis: 58.33%;
   }
-  /* line 62, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
+  /* line 83, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
   .col-8 {
     flex-basis: 66.67%;
   }
-  /* line 66, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
+  /* line 87, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
   .col-9 {
     flex-basis: 75.00%;
   }
-  /* line 70, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
+  /* line 91, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
   .col-10 {
     flex-basis: 83.33%;
   }
-  /* line 74, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
+  /* line 95, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
   .col-11 {
     flex-basis: 91.67%;
   }
-  /* line 78, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
+  /* line 99, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_grid.scss */
   .col-12 {
     flex-basis: 100%;
-  }
-  /* line 82, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  /* line 88, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
-  .nav-link {
-    flex-basis: 100px;
-  }
-  /* line 92, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
-  .btn {
-    padding: 10px 30px;
-  }
-  /* line 96, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
-  .btn + .btn {
-    margin-left: 10px;
-  }
-  /* line 100, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_media-queries.scss */
-  .logo {
-    margin-left: initial;
-    margin-right: initial;
   }
 }
 

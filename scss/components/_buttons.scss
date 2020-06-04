@@ -10,24 +10,45 @@
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
+    @include mq($brk-wide) {
+      padding: 10px 30px;
+      & + .btn {
+        margin-left: 10px;
+      }
+    } 
   }
   
   .default {
-    background-color: #51ddfc;
+    background-color: $color-secondary;
+    &:hover {
+      @include lighter($color-secondary);
+    }
   }
   
   .error {
     background-color: #e4757a;
+    &:hover {
+      @include lighter(#e4757a);
+    }
   }
   
   .info {
     background-color: $lightpurple;
+    &:hover {
+      @include lighter($lightpurple);
+    }
   }
   
   .success {
     background-color: #63cc82;
+    &:hover {
+      @include lighter(#63cc82);
+    }
   }
   
   .warning {
     background-color: $lightorange;
+    &:hover {
+      @include lighter($lightorange);
+    }
   }
