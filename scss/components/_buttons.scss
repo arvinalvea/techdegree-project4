@@ -20,6 +20,7 @@
   
   .default {
     background-color: $color-secondary;
+    transition-duration: .4s;
     &:hover {
       @include lighter($color-secondary);
     }
@@ -27,6 +28,7 @@
   
   .error {
     background-color: #e4757a;
+    transition-duration: .4s;
     &:hover {
       @include lighter(#e4757a);
     }
@@ -34,6 +36,7 @@
   
   .info {
     background-color: $lightpurple;
+    transition-duration: .4s;
     &:hover {
       @include lighter($lightpurple);
     }
@@ -41,6 +44,7 @@
   
   .success {
     background-color: #63cc82;
+    transition-duration: .4s;
     &:hover {
       @include lighter(#63cc82);
     }
@@ -48,6 +52,7 @@
   
   .warning {
     background-color: $lightorange;
+    transition-duration: .4s;
     &:hover {
       @include lighter($lightorange);
     }

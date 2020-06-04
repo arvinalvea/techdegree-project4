@@ -463,49 +463,54 @@ a {
 /* line 21, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
 .default {
   background-color: #51ddfc;
+  transition-duration: .4s;
 }
 
-/* line 23, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+/* line 24, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
 .default:hover {
   background-color: #9cecfd;
 }
 
-/* line 28, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+/* line 29, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
 .error {
   background-color: #e4757a;
+  transition-duration: .4s;
 }
 
-/* line 30, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+/* line 32, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
 .error:hover {
   background-color: #f1b5b8;
 }
 
-/* line 35, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+/* line 37, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
 .info {
   background-color: #927bc1;
+  transition-duration: .4s;
 }
 
-/* line 37, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+/* line 40, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
 .info:hover {
   background-color: #bdafd9;
 }
 
-/* line 42, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+/* line 45, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
 .success {
   background-color: #63cc82;
+  transition-duration: .4s;
 }
 
-/* line 44, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+/* line 48, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
 .success:hover {
   background-color: #9ddfb0;
 }
 
-/* line 49, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+/* line 53, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
 .warning {
   background-color: #fd7856;
+  transition-duration: .4s;
 }
 
-/* line 51, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
+/* line 56, ../../../../../../../../../../../../../Users/Arvin/Desktop/Treehouse Projects/techdegree-project4/scss/components/_buttons.scss */
 .warning:hover {
   background-color: #feb4a2;
 }
